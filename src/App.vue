@@ -57,7 +57,7 @@ export default {
   computed: {
     listSummary() {
       const numberFinishedItems = this.ToDoItems.filter(item =>item.done).length
-      return `${numberFinishedItems} out of ${this.ToDoItems.length} items completed`
+      return `${numberFinishedItems} / ${this.ToDoItems.length} todo đã hoàn thành`
     }
   }
 };
